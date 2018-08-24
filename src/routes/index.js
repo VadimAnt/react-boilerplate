@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 
-import HomePage from '../pages/HomePage';
-import AboutPage from '../pages/AboutPage';
-import PostsPage from '../pages/PostsPage';
+import HomePage from '../pages/home.page';
+import AboutPage from '../pages/about.page';
+import PostsPage from '../pages/posts.page';
 
 export default (
   <div>
