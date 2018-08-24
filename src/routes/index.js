@@ -1,14 +1,13 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
 
-import HomePage from '../pages/home.page';
-import AboutPage from '../pages/about.page';
-import PostsPage from '../pages/posts.page';
+import aboutRouters from './about.routers';
+import homeRoutes from './about.routers';
+import postRoutes from './about.routers';
 
 export default (
   <div>
-    <Route exact path="/" component={HomePage} />
-    <Route exact path="/about-us" component={AboutPage} />
-    <Route exact path="/posts" component={PostsPage} />
+    {homeRoutes}
+    {aboutRouters}
+    {postRoutes}
   </div>
 );

@@ -1,9 +1,9 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Router } from 'react-router-dom';
 import HomePage from '../pages/home.page';
 
 export default (
-  <div>
+  <Router>
     <Route exact path="/" component={HomePage} />
-  </div>
+  </Router>
 );
