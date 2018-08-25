@@ -24,6 +24,9 @@
 - Combain routes: src/routes/index.js<br/>
 - Example: src/routes/[about.routes.js]<br/>
 <br/>
+<b>Services: (business logic && another logic)</b><br/>
+- Folder: src/services<br/>
+<br/>
 <b>Store</b><br/>
 - Store: src/store/index.js<br/>
 - Enhancers: src/store/enhancers.js<br/>
