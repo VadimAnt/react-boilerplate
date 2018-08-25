@@ -6,7 +6,6 @@ const initialState = {
 }
 
 export default (state = initialState, actions) => {
-  console.log(actions.type)
   switch(actions.type) {
     case FETCH_POSTS:
      return {
