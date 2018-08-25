@@ -25,7 +25,8 @@
 - Example: src/routes/[about.routes.js]<br/>
 <br/>
 <b>Store</b><br/>
-- Store: src/store.js<br/>
+- Store: src/store/index.js<br/>
+- Enhancers: src/store/enhancers.js<br/>
 <br/>
 <b>Helpers functions</b><br/>
 - Folder: src/helpers<br/>
