@@ -13,6 +13,9 @@
 - Example page: src/pages/about/[about.page.js, about.page.css, ...]<br/>
 - Example component: src/component/navbar/[navbar.component.js navbar.component.css, ...]<br/>
 <br/>
+<b>Services: (business logic && another logic)</b><br/>
+- Folder: src/services<br/>
+<br/>
 <b>Redux</b><br/>
 - Actions folder: src/actions <br/>
 - Constants actions: src/actions/types.js<br/>
@@ -23,9 +26,6 @@
 - Routers folder: src/routes<br/>
 - Combain routes: src/routes/index.js<br/>
 - Example: src/routes/[about.routes.js]<br/>
-<br/>
-<b>Services: (business logic && another logic)</b><br/>
-- Folder: src/services<br/>
 <br/>
 <b>Store</b><br/>
 - Store: src/store/index.js<br/>
