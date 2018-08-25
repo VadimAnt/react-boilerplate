@@ -2,5 +2,5 @@
 - Create enveronment file in config folder <br/>
 - npm i <br/>
 - Run: npm run start:[environment] <br/>
-- Build: npm run build:[environment] i <br/>
+- Build: npm run build:[environment] <br/>
 - npm start <br/>
