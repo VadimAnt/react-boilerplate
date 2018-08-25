@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Navbar from './components/navbar.component';
+import Navbar from './components/navbar/navbar.component';
 import routes from './routes';
 
 class App extends Component {
