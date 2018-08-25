@@ -1,3 +1,4 @@
+<b>React/Redux/Routing</b><br/>
 <b>Setup and deployment</b><br/>
 - Choose env [development, production, staging, test] or create another environment <br/>
 - Create enveronment file in config folder <br/>
