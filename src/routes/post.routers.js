@@ -1,4 +1,4 @@
-import PostsPage from '../pages/posts.page';
+import PostsPage from '../pages/posts/posts.page';
 
 export default [{
   path: "/posts",
