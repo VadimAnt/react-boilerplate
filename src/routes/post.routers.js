@@ -1,9 +1,6 @@
-import React from 'react';
-import { Route, Router } from 'react-router-dom';
-import PostsPage from '../pages/home.page';
+import PostsPage from '../pages/posts.page';
 
-export default (
-  <Router>
-    <Route exact path="/posts" component={PostsPage} />
-  </Router>
-);
+export default [{
+  path: "/posts",
+  component: PostsPage
+}];

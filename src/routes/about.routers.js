@@ -1,9 +1,13 @@
 import React from 'react';
-import { Route, Router } from 'react-router-dom';
 import AboutPage from '../pages/about.page';
-
-export default (
-  <Router>
-    <Route exact path="/about-us" component={AboutPage} />
-  </Router>
-);
+const Bus = () => <h3>Bus</h3>;
+export default [{
+  path: "/about-us",
+  component: AboutPage,
+  routes: [
+    {
+      path: "/about-us/test",
+      component: Bus
+    },
+  ]
+}];
