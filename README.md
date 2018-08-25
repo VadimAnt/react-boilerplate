@@ -29,5 +29,7 @@
 <br/>
 <b>Helpers functions</b><br/>
 - Folder: src/helpers<br/>
-- Example: src/helpers/[routes.helper.js]
-
+- Example: src/helpers/[routes.helper.js]<br/>
+<b>Redux devtools</b><br/>
+- Devtools connects when environmnet: development || staging <br/>
+- Devtools connects in src/store.js file <br/>
