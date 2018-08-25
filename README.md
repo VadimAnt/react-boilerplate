@@ -1,7 +1,7 @@
 <b>React/Redux/Routing</b><br/>
 <b>Setup and deployment</b><br/>
 - Choose env [development, production, staging, test] or create another environment <br/>
-- Create enveronment file in config folder <br/>
+- Create enveronment file in env folder <br/>
 - npm i <br/>
 - Run: npm run start:[environment] <br/>
 - Build: npm run build:[environment] <br/>
