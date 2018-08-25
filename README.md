@@ -21,3 +21,6 @@
 <br/><br/>
 <b>Store</b><br/>
 - Store: src/store.js<br/>
+<br/><br/>
+<b>Helpers functions</b><br/>
+- Store: src/helpers.js<br/>
