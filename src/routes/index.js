@@ -10,7 +10,6 @@ const routes = [].concat(
   aboutRouters,
   postRoutes,
 );
-console.log(routes);
 
 export default (
   <Switch>
