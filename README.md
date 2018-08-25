@@ -22,7 +22,7 @@
 <b>Routes</b><br/>
 - Routers folder: src/routes<br/>
 - Combain routes: src/routes/index.js<br/>
-- Example: src/routes/[about.routes.js]
+- Example: src/routes/[about.routes.js]<br/>
 <br/>
 <b>Store</b><br/>
 - Store: src/store.js<br/>
