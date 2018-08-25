@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import propTypes from 'prop-types'
 import { connect } from 'react-redux';
 import { fetchPosts } from '../../actions/post.actions';
-import Postform from '../../components/postform.component';
+import Postform from '../../components/postform/postform.component';
 import './posts.page.css';
 
 class Posts extends Component {
