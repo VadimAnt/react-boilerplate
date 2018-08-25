@@ -3,18 +3,18 @@ export default {
   getPosts() {
     return fetch(`${domain}/posts`)
       .then(res => res.json())
-      .then(posts => { return posts; });
+      .then(posts => posts);
   },
 
   createPost(postData) {
-    return fetch(`${domain}/posts`,{ 
-        method: 'POST',
-        headers: {
-          'content-type': 'application/json'
-        },
-        body: JSON.stringify(postData),
-      })
+    return fetch(`${domain}/posts`, {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json',
+      },
+      body: JSON.stringify(postData),
+    })
       .then(res => res.json())
-      .then((post) => { return post });
-  }
-}
+      .then(post => post);
+  },
+};

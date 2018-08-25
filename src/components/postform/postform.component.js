@@ -10,14 +10,14 @@ class PostForm extends Component {
     this.state = {
       title: '',
       body: '',
-    }
+    };
 
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
   }
 
   onChange(e) {
-    this.setState({ [e.target.name]: e.target.value })
+    this.setState({ [e.target.name]: e.target.value });
   }
 
   onSubmit(e) {
@@ -26,8 +26,8 @@ class PostForm extends Component {
     const post = {
       title: this.state.title,
       body: this.state.body,
-    }
-  
+    };
+
     this.props.createPost(post);
   }
 
@@ -38,24 +38,24 @@ class PostForm extends Component {
         <form onSubmit={this.onSubmit}>
           <div>
             <label>Title:</label>
-            <input type="text" name="title" onChange={this.onChange} value={this.state.title}></input>
+            <input type="text" name="title" onChange={this.onChange} value={this.state.title} />
           </div>
-          <br/>
+          <br />
           <div>
-          <label>Body:</label>
-            <input type="text" name="body" onChange={this.onChange} value={this.state.body}></input>
+            <label>Body:</label>
+            <input type="text" name="body" onChange={this.onChange} value={this.state.body} />
           </div>
-          <br/>
+          <br />
           <button type="submit">Submit</button>
         </form>
-      
+
       </div>
-    )
+    );
   }
 }
 
 PostForm.propTypes = {
   createPost: PropTypes.func.isRequired,
-}
+};
 
 export default connect(null, { createPost })(PostForm);

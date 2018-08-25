@@ -15,6 +15,8 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
+    "lint:check": "node_modules/.bin/eslint src/**/*.js",
+    "lint:fix": "node_modules/.bin/eslint src/**/*.js --fix",
     "start:development": "node -r dotenv/config ./node_modules/react-scripts/bin/react-scripts start dotenv_config_path=env/development.env",
     "start:test": "node -r dotenv/config ./node_modules/react-scripts/bin/react-scripts start dotenv_config_path=env/test.env",
     "start:production": "node -r dotenv/config ./node_modules/react-scripts/bin/react-scripts start dotenv_config_path=env/production.env",
@@ -23,5 +25,13 @@
     "build:production": "node -r dotenv/config ./node_modules/react-scripts/bin/react-scripts build dotenv_config_path=env/production.env",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "^7.11.1"
   }
 }

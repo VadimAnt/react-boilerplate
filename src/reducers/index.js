@@ -3,4 +3,4 @@ import postReducer from './post.reducer';
 
 export default combineReducers({
   posts: postReducer,
-})
+});

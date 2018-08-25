@@ -13,8 +13,8 @@ const composedEnhancers = compose(
 );
 
 const store = createStore(
-  connectRouter(history)(rootReducer), 
-  initialState, 
+  connectRouter(history)(rootReducer),
+  initialState,
   composedEnhancers,
 );
 
