@@ -15,12 +15,12 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "start:development": "node -r dotenv/config ./node_modules/react-scripts/bin/react-scripts start dotenv_config_path=config/development.env",
-    "start:test": "node -r dotenv/config ./node_modules/react-scripts/bin/react-scripts start dotenv_config_path=config/test.env",
-    "start:production": "node -r dotenv/config ./node_modules/react-scripts/bin/react-scripts start dotenv_config_path=config/production.env",
-    "build:development": "node -r dotenv/config ./node_modules/react-scripts/bin/react-scripts build dotenv_config_path=config/development.env",
-    "build:test": "node -r dotenv/config ./node_modules/react-scripts/bin/react-scripts build dotenv_config_path=config/test.env",
-    "build:production": "node -r dotenv/config ./node_modules/react-scripts/bin/react-scripts build dotenv_config_path=config/production.env",
+    "start:development": "node -r dotenv/config ./node_modules/react-scripts/bin/react-scripts start dotenv_config_path=env/development.env",
+    "start:test": "node -r dotenv/config ./node_modules/react-scripts/bin/react-scripts start dotenv_config_path=env/test.env",
+    "start:production": "node -r dotenv/config ./node_modules/react-scripts/bin/react-scripts start dotenv_config_path=env/production.env",
+    "build:development": "node -r dotenv/config ./node_modules/react-scripts/bin/react-scripts build dotenv_config_path=env/development.env",
+    "build:test": "node -r dotenv/config ./node_modules/react-scripts/bin/react-scripts build dotenv_config_path=env/test.env",
+    "build:production": "node -r dotenv/config ./node_modules/react-scripts/bin/react-scripts build dotenv_config_path=env/production.env",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
