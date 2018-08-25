@@ -27,6 +27,8 @@
 <b>Store</b><br/>
 - Store: src/store/index.js<br/>
 - Enhancers: src/store/enhancers.js<br/>
+- Middlewares: src/store/middlewares.js<br/>
+- History: src/store/history.js<br/>
 <br/>
 <b>Helpers functions</b><br/>
 - Folder: src/helpers<br/>
