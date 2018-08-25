@@ -1,6 +1,7 @@
 import React from 'react';
-import { Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import { RouteWithSubRoutes } from '../helpers/routes.helper';
+import NotFoundPage from '../pages/notfound/notfound.page';
 
 import aboutRouters from './about.routers';
 import homeRoutes from './home.routers';
@@ -15,5 +16,6 @@ const routes = [].concat(
 export default (
   <Switch>
     {routes.map((route, i) => <RouteWithSubRoutes key={i} {...route} />)}
+    <Route component={NotFoundPage} />
   </Switch>
 )
