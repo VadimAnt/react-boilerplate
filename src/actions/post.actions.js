@@ -1,7 +1,8 @@
 import { FETCH_POSTS, NEW_POSTS } from './types';
+const domain = process.env.REACT_APP_DOMAIN;
 
 export const fetchPosts = () => dispatch => {
-  fetch('https://jsonplaceholder.typicode.com/posts')
+  fetch(`${domain}/posts`)
     .then(res => res.json())
     .then(posts => {
       dispatch({ type: FETCH_POSTS, payload: posts })
@@ -9,7 +10,7 @@ export const fetchPosts = () => dispatch => {
 }
 
 export const createPost = (postData) => dispatch => {
-  fetch('https://jsonplaceholder.typicode.com/posts',{ 
+  fetch(`${domain}/posts`,{ 
       method: 'POST',
       headers: {
         'content-type': 'application/json'

@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "connected-react-router": "^4.4.1",
+    "dotenv": "^6.0.0",
     "history": "^4.7.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
@@ -14,8 +15,12 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start:development": "node -r dotenv/config ./node_modules/react-scripts/bin/react-scripts start dotenv_config_path=config/development.env",
+    "start:test": "node -r dotenv/config ./node_modules/react-scripts/bin/react-scripts start dotenv_config_path=config/test.env",
+    "start:production": "node -r dotenv/config ./node_modules/react-scripts/bin/react-scripts start dotenv_config_path=config/production.env",
+    "build:development": "node -r dotenv/config ./node_modules/react-scripts/bin/react-scripts build dotenv_config_path=config/development.env",
+    "build:test": "node -r dotenv/config ./node_modules/react-scripts/bin/react-scripts build dotenv_config_path=config/test.env",
+    "build:production": "node -r dotenv/config ./node_modules/react-scripts/bin/react-scripts build dotenv_config_path=config/production.env",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
