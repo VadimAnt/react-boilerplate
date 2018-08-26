@@ -10,8 +10,18 @@
       "jsx": true
     }
   },
-  "extends": "airbnb",
+  "extends": [
+    "airbnb",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier"
+  ],
   "rules": {
+    "prettier/prettier": ["error", {
+      "singleQuote": true,
+      "trailingComma": "es5"
+    }],
     "linebreak-style": ["error", "windows"],
     "no-underscore-dangle": ["error", { "allow": ["__REDUX_DEVTOOLS_EXTENSION__"] }]
   }
