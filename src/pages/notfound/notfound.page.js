@@ -10,6 +10,11 @@ export default class NotFoundPage extends Component {
 
 
 
+
+
+
+
+
         Page not found
       </div>
     );

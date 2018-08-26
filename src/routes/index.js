@@ -15,7 +15,7 @@ const routes = [].concat(
 
 export default (
   <Switch>
-    {routes.map((route, i) => <RouteWithSubRoutes key={i} {...route} />)}
+    {routes.map((route, i) => <RouteWithSubRoutes key={route.path} {...route} />)}
     <Route component={NotFoundPage} />
   </Switch>
 );

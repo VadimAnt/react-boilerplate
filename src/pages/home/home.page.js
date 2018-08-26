@@ -10,6 +10,11 @@ export default class HomePage extends Component {
 
 
 
+
+
+
+
+
         Home component
       </div>
     );

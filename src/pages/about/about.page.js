@@ -11,6 +11,11 @@ export default class AboutPage extends Component {
 
 
 
+
+
+
+
+
         About component
         {this.props.routes.map((route, i) => <RouteWithSubRoutes key={i} {...route} />)}
       </div>
