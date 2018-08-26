@@ -10,8 +10,8 @@
 <b>Components and Pages</b><br/>
 - Pages folder: src/pages - for example:[Home page, About page...]<br/>
 - Component folder: src/component - for example: [Post form, navbar]<br/>
-- Example page: src/pages/about/[about.page.js, about.page.css, ...]<br/>
-- Example component: src/component/navbar/[navbar.component.js navbar.component.css, ...]<br/>
+- Example page: src/pages/about/[about.page.jsx, about.page.css, ...]<br/>
+- Example component: src/component/navbar/[navbar.component.jsx navbar.component.css, ...]<br/>
 <br/>
 <b>Services: (business logic && another logic)</b><br/>
 - Folder: src/services<br/>
@@ -39,4 +39,4 @@
 <br/>
 <b>Redux devtools</b><br/>
 - Devtools connects when environment: development || staging <br/>
-- Devtools connects in src/store.js file <br/>
+- Devtools connects in src/store/enhancers.js file <br/>
