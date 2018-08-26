@@ -34,21 +34,30 @@ class PostForm extends Component {
   render() {
     return (
       <div>
-        <h1>Add post</h1>
+        <h1 className="test">Add post</h1>
         <form onSubmit={this.onSubmit}>
           <div>
             <label>Title:</label>
-            <input type="text" name="title" onChange={this.onChange} value={this.state.title} />
+            <input
+              type="text"
+              name="title"
+              onChange={this.onChange}
+              value={this.state.title}
+            />
           </div>
           <br />
           <div>
             <label>Body:</label>
-            <input type="text" name="body" onChange={this.onChange} value={this.state.body} />
+            <input
+              type="text"
+              name="body"
+              onChange={this.onChange}
+              value={this.state.body}
+            />
           </div>
           <br />
           <button type="submit">Submit</button>
         </form>
-
       </div>
     );
   }
@@ -58,4 +67,7 @@ PostForm.propTypes = {
   createPost: PropTypes.func.isRequired,
 };
 
-export default connect(null, { createPost })(PostForm);
+export default connect(
+  null,
+  { createPost }
+)(PostForm);
