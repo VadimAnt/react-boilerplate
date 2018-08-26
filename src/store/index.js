@@ -9,13 +9,13 @@ const initialState = {};
 
 const composedEnhancers = compose(
   applyMiddleware(...middlewares),
-  ...enhancers,
+  ...enhancers
 );
 
 const store = createStore(
   connectRouter(history)(rootReducer),
   initialState,
-  composedEnhancers,
+  composedEnhancers
 );
 
 export default store;
