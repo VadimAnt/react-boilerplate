@@ -2,6 +2,8 @@ import React from 'react';
 import Postform from '../../components/postform/postform.component';
 
 class Posts extends Component {
+    static 
+
     componentWillMount() {
       console.log('WillMount');
       this.props.fetchPosts();
