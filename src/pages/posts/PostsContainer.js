@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import propTypes from 'prop-types';
 import { connect } from 'react-redux';
 import PostsComponent from './PostsComponent';
 import './css/posts.css';

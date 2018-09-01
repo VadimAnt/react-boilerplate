@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-const HomeComponent = ({}) => {
+const HomeComponent = () => {
   return <div>Home component</div>;
 };
 

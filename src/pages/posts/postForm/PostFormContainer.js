@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createPost } from '../features/operations';
 import PostForm from './PostFormComponent';
 
 class PostsFormContainer extends Component {
+  static propTypes = {
+    newPost: PropTypes.object.isRequired,
+    createPost: PropTypes.func.isRequired,
+  };
+
   constructor(props) {
     super(props);
     this.state = {
@@ -43,12 +48,6 @@ class PostsFormContainer extends Component {
 const mapStateToProps = state => ({
   newPost: state.posts.item,
 });
-
-const mapDispatchToProps = dispatch => {
-  return {
-    createPost,
-  };
-};
 
 export default connect(
   mapStateToProps,

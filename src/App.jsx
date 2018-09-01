@@ -3,8 +3,9 @@ import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
 import store from './store';
 import history from './store/history';
-import Navbar from './components/navbar/navbar.component';
 import routes from './routes';
+
+import Navbar from './components/navbar/Navbar';
 
 class App extends Component {
   render() {

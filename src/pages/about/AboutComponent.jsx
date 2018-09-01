@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { RouteWithSubRoutes } from '../../utils/routesWithSubRoutes';
 
 const AboutComponent = ({ routes }) => {

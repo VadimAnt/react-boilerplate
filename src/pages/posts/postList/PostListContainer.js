@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { fetchPosts } from '../features/operations';
 import PostList from './PostListComponent';
+import { fetchPosts } from '../features/operations';
 import './css/postList.css';
 
 class PostsListContainer extends Component {
+  static propTypes = {
+    posts: PropTypes.array.isRequired,
+    fetchPosts: PropTypes.func.isRequired,
+    newPost: PropTypes.object,
+  };
+
   componentWillMount() {
     this.props.fetchPosts();
   }

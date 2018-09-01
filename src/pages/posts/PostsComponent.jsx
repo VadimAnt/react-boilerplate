@@ -2,7 +2,7 @@ import React from 'react';
 import PostList from './postList/PostListContainer';
 import PostForm from './postForm/PostFormContainer';
 
-const PostComponent = ({}) => {
+const PostComponent = () => {
   return (
     <div>
       <h1>Posts</h1>
