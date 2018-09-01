@@ -1,4 +1,4 @@
-<b>React/Redux/Routing</b><br/>
+<b>React/Redux/Routing/Duck pattern</b><br/>
 <b>Setup and deployment</b><br/>
 - Choose env [development, production, staging, test] or create another environment <br/>
 - Create enveronment file in env folder for example: development.env<br/>
@@ -9,23 +9,20 @@
 <br/>
 <b>Components and Pages</b><br/>
 - Pages folder: src/pages - for example:[Home page, About page...]<br/>
-- Component folder: src/component - for example: [Post form, navbar]<br/>
-- Example page: src/pages/about/[about.page.jsx, about.page.css, ...]<br/>
-- Example component: src/component/navbar/[navbar.component.jsx navbar.component.css, ...]<br/>
+- Component folder: src/component - for example: [navbar, modal, ...]<br/>
+- Example: src/pages/about/[AboutContainers.js, AboutComponent.js, ...]<br/>
 <br/>
-<b>Services: (business logic && another logic)</b><br/>
-- Folder: src/services<br/>
-<br/>
-<b>Redux</b><br/>
-- Actions folder: src/actions <br/>
-- Constants actions: src/actions/types.js<br/>
-- Reducers folder: src/reducers<br/>
+<b>Redux with duck pattern</b><br/>
+- Actions folder: src/pages/[something-page]/features/actions.js <br/>
+- Constants: src/pages/[something-page]/features/types.js<br/>
+- Reducers folder: src/pages/[something-page]/features/reducers.js<br/>
+- Operation folder: src/pages/[something-page]/features/operations.js<br/>
 - Combain reducers: src/reducers/index.js<br/>
 <br/>
 <b>Routes</b><br/>
 - Routers folder: src/routes<br/>
 - Combain routes: src/routes/index.js<br/>
-- Example: src/routes/[about.routes.js]<br/>
+- Example: src/routes/[AboutRoutes.js]<br/>
 <br/>
 <b>Store</b><br/>
 - Store: src/store/index.js<br/>
@@ -33,9 +30,9 @@
 - Middlewares: src/store/middlewares.js<br/>
 - History: src/store/history.js<br/>
 <br/>
-<b>Helpers functions</b><br/>
-- Folder: src/helpers<br/>
-- Example: src/helpers/[routes.helper.js]<br/>
+<b>Utils functions</b><br/>
+- Folder: src/utils<br/>
+- Example: src/utils/[Something.js]<br/>
 <br/>
 <b>Redux devtools</b><br/>
 - Devtools connects when environment: development || staging <br/>
