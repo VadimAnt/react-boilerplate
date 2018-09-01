@@ -1,21 +1,19 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { RouteWithSubRoutes } from '../helpers/routes.helper';
-import NotFoundPage from '../pages/notfound/notfound.page';
+import { RouteWithSubRoutes } from '../utils/routesWithSubRoutes';
+import NotFoundPage from '../pages/notfound/NotFoundContainer';
 
-import aboutRouters from './about.routers';
-import homeRoutes from './home.routers';
-import postRoutes from './post.routers';
+import aboutRouters from './AboutRoutes';
+import homeRoutes from './HomeRoutes';
+import postRoutes from './PostRoutes';
 
-const routes = [].concat(
-  homeRoutes,
-  aboutRouters,
-  postRoutes,
-);
+const routes = [].concat(homeRoutes, aboutRouters, postRoutes);
 
 export default (
   <Switch>
-    {routes.map((route, i) => <RouteWithSubRoutes key={route.path} {...route} />)}
+    {routes.map((route, i) => (
+      <RouteWithSubRoutes key={route.path} {...route} />
+    ))}
     <Route component={NotFoundPage} />
   </Switch>
 );
