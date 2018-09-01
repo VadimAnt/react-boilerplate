@@ -9,7 +9,7 @@
 <br/>
 <b>Components and Pages</b><br/>
 - Pages folder: src/pages - for example:[Home page, About page...]<br/>
-- Component folder: src/component - for example: [navbar, modal, ...]<br/>
+- Common components: src/components - for example: [navbar, modal, ...]<br/>
 - Example: src/pages/about/[AboutContainers.js, AboutComponent.js, ...]<br/>
 <br/>
 <b>Redux with duck pattern</b><br/>
