@@ -17,7 +17,7 @@
 - Constants: src/pages/[something-page]/features/types.js<br/>
 - Reducers folder: src/pages/[something-page]/features/reducers.js<br/>
 - Operation folder: src/pages/[something-page]/features/operations.js<br/>
-- Combain reducers: src/reducers/index.js<br/>
+- Combain reducers: src/reducers.js<br/>
 <br/>
 <b>Routes</b><br/>
 - Routers folder: src/routes<br/>
