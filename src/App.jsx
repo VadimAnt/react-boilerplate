@@ -6,6 +6,7 @@ import history from './store/history';
 import routes from './routes';
 
 import Navbar from './components/navbar/Navbar';
+import './css/main.css';
 
 class App extends Component {
   render() {

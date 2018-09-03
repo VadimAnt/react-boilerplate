@@ -5,9 +5,9 @@ const AboutComponent = ({ routes }) => {
   return (
     <div>
       About component
-      {routes.map((route, i) => (
+      {/* {routes.map((route, i) => (
         <RouteWithSubRoutes key={i} {...route} />
-      ))}
+      ))} */}
     </div>
   );
 };
