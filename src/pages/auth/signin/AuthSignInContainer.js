@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { goBack } from 'connected-react-router';
 import AuthSignInComponent from './AuthSignInComponent';
 import { signIn } from '../features/operations';
 
@@ -10,6 +11,7 @@ class AuthSignInContainer extends Component {
     this.state = {
       email: '',
       password: '',
+      redirectsPath: this.props.location.state || { from: { pathname: '/' } },
     };
   }
 
@@ -26,7 +28,7 @@ class AuthSignInContainer extends Component {
     };
 
     this.setState({ email: '', password: '' });
-    this.props.signIn(credentials);
+    this.props.signIn(credentials, this.state.redirectsPath);
   };
 
   render() {
@@ -41,11 +43,13 @@ class AuthSignInContainer extends Component {
   }
 }
 
-const mapStateToProps = state => ({});
+const mapStateToProps = state => ({
+  auth: state.auth,
+});
 
 export default withRouter(
   connect(
     mapStateToProps,
-    { signIn }
+    { signIn, goBack }
   )(AuthSignInContainer)
 );
