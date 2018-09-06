@@ -22,13 +22,14 @@ class AuthSignInContainer extends Component {
   onSubmit = e => {
     e.preventDefault();
 
+    const redirectsPath = this.state.redirectsPath;
     const credentials = {
       email: this.state.email,
       password: this.state.password,
     };
 
-    this.setState({ email: '', password: '' });
-    this.props.signIn(credentials, this.state.redirectsPath);
+    this.setState({ email: '', password: '', redirectsPath: '' });
+    this.props.signIn(credentials, redirectsPath);
   };
 
   render() {
