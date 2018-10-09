@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import NotFoundComponent from './NotFoundComponent';
+
 import './css/notfound.css';
 
 class NotFoundContainer extends Component {

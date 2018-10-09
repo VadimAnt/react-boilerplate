@@ -1,7 +1,8 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import NotFoundPage from '../pages/notfound/NotFoundContainer';
 import PrivateRoute from '../utils/PrivateRoute';
+
+import NotFoundPage from '../pages/notfound/NotFoundContainer';
 
 import AboutContainer from '../pages/about/AboutContainer';
 import HomeContainer from '../pages/home/HomeContainer';

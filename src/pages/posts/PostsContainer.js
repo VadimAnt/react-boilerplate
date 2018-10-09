@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PostsComponent from './PostsComponent';
+
 import './css/posts.css';
 
 class PostsContainer extends Component {

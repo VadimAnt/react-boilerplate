@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Route, Redirect } from 'react-router-dom';
+
 const PATH_SIGNIN = '/auth/signin';
 
 class PrivateRoute extends Component {

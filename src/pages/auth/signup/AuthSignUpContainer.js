@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+
 import AuthSignUpComponent from './AuthSignUpComponent';
 import { signUp } from '../features/operations';
 
